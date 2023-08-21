@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>To-Do App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="header">
+    <h1 class="header-title">Meine To-Do's</h1>
+  </header>
+
+  <main class="main">
+    <div class="todo-container">
+
+      <div class="filter-container">
+        <label for="radio-all" class="filter-label">Alle</label>
+        <input type="radio" name="filter" id="radio-all" class="filter-radio" />
+
+        <label for="radio-open" class="filter-label">Offen</label>
+        <input type="radio" name="filter" id="radio-open" class="filter-radio" />
+
+        <label for="radio-done" class="filter-label">Erledigt</label>
+        <input type="radio" name="filter" id="radio-done" class="filter-radio" />
+      </div>
+
+      <div class="input-container">
+        <label for="todo-input" class="input-label">Was hast du zu erledigen?</label>
+        <input type="text" name="todo-input" id="todo-input" class="todo-description" />
+        <!-- to-do error message -->
+        <div id="error-message" style="display: none;"></div> 
+      </div>
+
+      <button id="add-todo" class="btn-add">Eintragen</button>
+      <button id="delete-todo" class="delete-button">Eintrag löschen</button>
+
+    </div>
+
+    <ul class="todos-list"></ul>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
